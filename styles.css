@@ -37,3 +37,23 @@ body.menu-open{overflow:hidden}
   .food-menu-card{min-height:280px;padding:25px}
   .food-menu-card strong{font-size:43px}
 }
+
+/* Organização da versão final: imagens somente na galeria */
+.hero{background:var(--green)}
+.about-grid{max-width:var(--max);margin:auto;display:block}
+.about-copy{max-width:760px}
+.sport-card{min-height:260px}
+.sport-card .sport-info{padding-top:25px}
+.gallery-grid-two{grid-template-columns:1.35fr 1fr;grid-auto-rows:420px}
+.gallery-grid-two .gallery-item.large{grid-row:span 1}
+.contact-grid{align-items:start}
+.contact-intro{max-width:520px;font-size:16px;line-height:1.6;margin:0 0 30px}
+.contact-list{display:grid;gap:10px;max-width:560px}
+.contact-card{display:grid;grid-template-columns:110px 1fr auto;gap:15px;align-items:center;border:1px solid var(--line);padding:17px 18px;color:var(--ink);text-decoration:none}
+.contact-card span,.contact-address>span{font-size:9px;letter-spacing:.15em;font-weight:700}
+.contact-card strong{font-family:"Space Grotesk";font-size:19px}
+.contact-card small{font-size:9px;letter-spacing:.1em;text-transform:uppercase}
+.contact-address{margin-top:28px;border-top:1px solid var(--line);padding-top:24px}
+.contact-address address{margin:10px 0 18px}
+@media(max-width:900px){.gallery-grid-two{grid-template-columns:1fr;grid-auto-rows:300px}.gallery-grid-two .gallery-item.large{grid-row:span 1}.contact-card{grid-template-columns:1fr;gap:5px}.contact-card small{margin-top:5px}.sport-card{min-height:0}}
+.experience-grid{display:block;max-width:var(--max);margin:auto}.experience-copy{max-width:760px;padding-left:0}
