@@ -63,3 +63,37 @@ body.menu-open{overflow:hidden}
 .gallery-grid-three .gallery-item.large{grid-row:span 2}
 @media(max-width:900px){.gallery-grid-three{grid-template-columns:1fr;grid-template-rows:auto;grid-auto-rows:300px}.gallery-grid-three .gallery-item.large{grid-row:span 1}}
 @media(max-width:480px){.gallery-grid-three{grid-auto-rows:260px}}
+
+/* V8 — cabeçalho limpo, centralizado e que se esconde ao rolar para baixo */
+.nav{
+  justify-content:center;
+  transition:transform .38s cubic-bezier(.22,.61,.36,1), background .3s, opacity .25s;
+}
+.nav .brand{position:absolute;left:50%;transform:translateX(-50%);margin:0;z-index:2;}
+.nav .desktop-nav,.nav .nav-cta{display:none;}
+.nav.nav-hidden{transform:translateY(-110%);}
+.nav .menu-btn{display:none !important;}
+
+/* Avaliações — cinco estrelas, com meia estrela visual */
+.rating{grid-template-columns:auto 1fr;column-gap:18px;row-gap:13px;align-items:end;}
+.rating .stars{display:flex;gap:3px;align-items:center;color:var(--orange);font-size:34px;line-height:1;white-space:nowrap;padding-bottom:2px;}
+.rating .stars b{font-weight:700;display:inline-block;}
+.rating .stars .half{position:relative;color:#d8cdb9;}
+.rating .stars .half::before{content:"★";position:absolute;left:0;top:0;width:50%;overflow:hidden;color:var(--orange);}
+.rating small{grid-column:1/-1;}
+
+.gallery-empty{min-height:260px;align-items:center;}
+.gallery-empty h2{margin-bottom:0;}
+
+@media(max-width:900px){
+  .nav{height:64px;padding:0 18px;}
+  .nav .brand{left:50%;}
+  .gallery-empty{min-height:220px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:25px;}
+  .rating{grid-template-columns:1fr;gap:12px;}
+  .rating .stars{font-size:28px;}
+  .rating small{grid-column:auto;}
+}
+@media(max-width:480px){
+  .rating strong{font-size:78px;}
+  .rating .stars{font-size:26px;gap:2px;}
+}

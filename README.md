@@ -1,21 +1,8 @@
-# OKA — site estático V4
+# OKA Quadra & Bar — V8
 
-## Deploy no GitHub + Vercel
-1. Suba **todos os arquivos desta pasta** para a raiz do repositório.
-2. No Vercel, importe o repositório.
-3. Framework Preset: **Other**.
-4. Build Command: deixe vazio.
-5. Output Directory: deixe vazio / raiz.
-6. Deploy.
-
-### Importante
-Não coloque `index.html` dentro de uma subpasta se o projeto Vercel estiver apontando para a raiz.
-
-Esta versão não depende de React, Next, Tailwind ou JavaScript para renderizar o conteúdo principal. O HTML já contém o conteúdo, e o JS só adiciona interações.
-
-As fotos públicas externas têm fallback local para evitar blocos vazios caso o servidor externo não responda.
-
-## V5 — organização e imagens
-- Removido o desenho dos dois círculos da seção laranja; ficou um painel limpo para o cardápio.
-- Corrigidas as imagens de esportes, experiência e galeria com fotos do OKA e fallbacks locais.
-- Melhorado o comportamento das âncoras no celular e a leitura da galeria.
+- Remove as 3 imagens da galeria anterior.
+- Cabeçalho mobile/geral limpo, sem hambúrguer, com OKA QUADRA & BAR centralizado.
+- Cabeçalho esconde ao rolar para baixo e reaparece ao rolar para cima, inclusive em touch e navegação por âncoras.
+- Avaliação visual com cinco estrelas, incluindo meia estrela para 4,5.
+- Galeria sem imagens quebradas ou espaços de imagem.
+- Contato permanece com WhatsApp, telefone, Instagram, endereço e mapa.
