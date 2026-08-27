@@ -14,3 +14,8 @@ Não coloque `index.html` dentro de uma subpasta se o projeto Vercel estiver apo
 Esta versão não depende de React, Next, Tailwind ou JavaScript para renderizar o conteúdo principal. O HTML já contém o conteúdo, e o JS só adiciona interações.
 
 As fotos públicas externas têm fallback local para evitar blocos vazios caso o servidor externo não responda.
+
+## V5 — organização e imagens
+- Removido o desenho dos dois círculos da seção laranja; ficou um painel limpo para o cardápio.
+- Corrigidas as imagens de esportes, experiência e galeria com fotos do OKA e fallbacks locais.
+- Melhorado o comportamento das âncoras no celular e a leitura da galeria.
