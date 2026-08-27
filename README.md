@@ -1,25 +1,22 @@
-# OKA Website — v2 corrigida
+# OKA — V3 corrigida para produção
 
-Esta versão corrige os principais problemas da primeira entrega:
-- remove dependência de caminhos de arquivos locais;
-- garante que as imagens sejam atribuídas via JavaScript ao carregar;
-- usa layout responsivo real para Android, iPhone, tablet e desktop;
-- menu mobile funcional;
-- lightbox funcional;
-- links de telefone, Instagram e Google Maps funcionais;
-- conteúdo centralizado em `content.js`;
-- animações com fallback para `prefers-reduced-motion`;
-- iframe de mapa lazy;
-- formulário sem promessa falsa de reserva;
-- HTML semântico e labels;
-- SEO básico e schema LocalBusiness.
+## O que mudou
+A página não depende mais de JavaScript para renderizar o conteúdo principal. Isso elimina o problema visto nas capturas, em que o JS falhava e deixava enormes áreas vazias.
 
-## Publicação
-1. Sirva a pasta como site estático.
-2. Troque as URLs das imagens em `content.js` por fotos oficiais/autorizadas do OKA.
-3. Troque o domínio do sitemap/canonical quando houver domínio oficial.
-4. Conecte o formulário a WhatsApp/e-mail/CRM.
-5. Teste em Safari iOS e Chrome Android antes de publicar.
+- Conteúdo principal está no HTML.
+- Imagens públicas do OKA são usadas quando o host remoto responde.
+- Cada imagem possui fallback local SVG, então nunca aparece uma área vazia.
+- Menu mobile real para Android/iPhone.
+- Galeria/lightbox independente.
+- Mapa, telefone, Instagram e Google Maps.
+- Formulário com acessibilidade.
+- Layout mobile específico.
+- `prefers-reduced-motion`.
+- SEO e LocalBusiness.
+- Sem dependência de React/Next/Tailwind para uma página institucional simples.
 
-## Dados públicos usados
-Endereço, telefone, Instagram, horários e avaliação pública foram conferidos em fontes recentes. A fonte Restaurant Guru mostra 4,5/5 com 304 avaliações e os horários informados; a página SmashPro mostra o estabelecimento e galeria de imagens. Como horários podem mudar, o componente permanece editável.
+## Imagens
+As fotos públicas são da página do OKA no SmashPro. Para uso oficial/comercial, substitua pelas fotos autorizadas pelo estabelecimento. Os SVGs em `assets/` são apenas fallbacks de carregamento e não se passam por fotografias reais.
+
+## Deploy na Vercel
+Faça upload desta pasta como projeto estático. O arquivo `index.html` é a entrada. Não é necessário build.
