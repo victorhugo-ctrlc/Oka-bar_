@@ -1,22 +1,16 @@
-# OKA — V3 corrigida para produção
+# OKA — site estático V4
 
-## O que mudou
-A página não depende mais de JavaScript para renderizar o conteúdo principal. Isso elimina o problema visto nas capturas, em que o JS falhava e deixava enormes áreas vazias.
+## Deploy no GitHub + Vercel
+1. Suba **todos os arquivos desta pasta** para a raiz do repositório.
+2. No Vercel, importe o repositório.
+3. Framework Preset: **Other**.
+4. Build Command: deixe vazio.
+5. Output Directory: deixe vazio / raiz.
+6. Deploy.
 
-- Conteúdo principal está no HTML.
-- Imagens públicas do OKA são usadas quando o host remoto responde.
-- Cada imagem possui fallback local SVG, então nunca aparece uma área vazia.
-- Menu mobile real para Android/iPhone.
-- Galeria/lightbox independente.
-- Mapa, telefone, Instagram e Google Maps.
-- Formulário com acessibilidade.
-- Layout mobile específico.
-- `prefers-reduced-motion`.
-- SEO e LocalBusiness.
-- Sem dependência de React/Next/Tailwind para uma página institucional simples.
+### Importante
+Não coloque `index.html` dentro de uma subpasta se o projeto Vercel estiver apontando para a raiz.
 
-## Imagens
-As fotos públicas são da página do OKA no SmashPro. Para uso oficial/comercial, substitua pelas fotos autorizadas pelo estabelecimento. Os SVGs em `assets/` são apenas fallbacks de carregamento e não se passam por fotografias reais.
+Esta versão não depende de React, Next, Tailwind ou JavaScript para renderizar o conteúdo principal. O HTML já contém o conteúdo, e o JS só adiciona interações.
 
-## Deploy na Vercel
-Faça upload desta pasta como projeto estático. O arquivo `index.html` é a entrada. Não é necessário build.
+As fotos públicas externas têm fallback local para evitar blocos vazios caso o servidor externo não responda.
