@@ -1,152 +1,126 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>OKA — Esporte, encontros e experiências em Uberlândia</title>
-  <meta name="description" content="OKA Quadra de Areia & Bar em Uberlândia. Esporte, encontros, gastronomia e experiências ao ar livre.">
-  <meta name="theme-color" content="#1d2b21">
-  <meta property="og:title" content="OKA — Esporte, encontros e experiências">
-  <meta property="og:description" content="Um espaço de areia, esporte e convivência em Uberlândia.">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="pt_BR">
-  <meta name="robots" content="index,follow">
-  <link rel="canonical" href="https://www.example.com/">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css">
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"LocalBusiness",
-    "name":"OKA Bar",
-    "description":"OKA Quadra de Areia & Bar em Uberlândia.",
-    "telephone":"+55 34 99188-7306",
-    "address":{
-      "@type":"PostalAddress",
-      "streetAddress":"Av. Ver. Carlito Cordeiro, 1321",
-      "addressLocality":"Uberlândia",
-      "addressRegion":"MG",
-      "postalCode":"38410-665",
-      "addressCountry":"BR"
-    },
-    "sameAs":["https://www.instagram.com/espacooka/"],
-    "url":"https://www.example.com/"
-  }
-  </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#18261d">
+<title>OKA — Esporte, encontros e experiências</title>
+<meta name="description" content="OKA Quadra de Areia & Bar em Uberlândia. Esporte, encontros e experiências ao ar livre.">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="OKA — Quadra de Areia & Bar">
+<meta property="og:description" content="Esporte, encontros e experiências em Uberlândia.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"OKA Bar","telephone":"+5534991887306","address":{"@type":"PostalAddress","streetAddress":"Av. Ver. Carlito Cordeiro, 1321","addressLocality":"Uberlândia","addressRegion":"MG","postalCode":"38410-665","addressCountry":"BR"},"sameAs":["https://www.instagram.com/espacooka/"]}
+</script>
 </head>
 <body>
-<header class="nav" id="nav">
-  <a class="logo" href="#inicio" aria-label="OKA início"><span>OKA</span><small>QUADRA & BAR</small></a>
-  <nav class="desktop-nav" aria-label="Navegação principal">
-    <a href="#inicio">Início</a><a href="#oka">O OKA</a><a href="#esportes">Esportes</a>
-    <a href="#gastronomia">Gastronomia</a><a href="#galeria">Galeria</a><a href="#eventos">Eventos</a><a href="#contato">Contato</a>
+<header class="header" id="header">
+  <a class="brand" href="#inicio" aria-label="OKA, início"><b>OKA</b><span>QUADRA & BAR</span></a>
+  <nav class="nav" aria-label="Navegação principal">
+    <a href="#oka">O OKA</a><a href="#esportes">Esportes</a><a href="#gastronomia">Gastronomia</a><a href="#galeria">Galeria</a><a href="#eventos">Eventos</a><a href="#contato">Contato</a>
   </nav>
-  <a class="nav-cta" href="#contato">Como chegar <span>↗</span></a>
-  <button class="menu-btn" id="menu-btn" aria-label="Abrir menu" aria-controls="mobile-menu" aria-expanded="false"><span></span><span></span></button>
-  <nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobile">
-    <a href="#inicio">Início</a><a href="#oka">O OKA</a><a href="#esportes">Esportes</a><a href="#gastronomia">Gastronomia</a><a href="#galeria">Galeria</a><a href="#eventos">Eventos</a><a href="#contato">Contato</a>
-  </nav>
+  <a class="header-cta" data-maps href="#">Como chegar ↗</a>
+  <button class="hamb" id="hamb" aria-label="Abrir menu" aria-expanded="false" aria-controls="drawer"><i></i><i></i></button>
 </header>
+<div class="drawer" id="drawer">
+  <a href="#oka">O OKA</a><a href="#esportes">Esportes</a><a href="#gastronomia">Gastronomia</a><a href="#galeria">Galeria</a><a href="#eventos">Eventos</a><a href="#contato">Contato</a>
+  <a class="drawer-cta" data-maps href="#">Como chegar ↗</a>
+</div>
 
 <main>
 <section class="hero" id="inicio">
-  <img id="hero-image" class="hero-bg" alt="" fetchpriority="high">
-  <div class="hero-overlay"></div>
-  <div class="hero-grid"></div>
+  <img id="hero" class="hero-img" alt="" fetchpriority="high">
+  <div class="hero-shade"></div>
+  <div class="hero-lines"></div>
   <div class="hero-content">
-    <p class="eyebrow light">UBERLÂNDIA / MG</p>
+    <p class="kicker light">UBERLÂNDIA / MG</p>
     <h1>Esporte.<br><em>Encontros.</em><br>Experiência.</h1>
-    <p class="hero-sub">Um espaço para jogar, encontrar e curtir — com a energia da areia e o céu aberto.</p>
-    <div class="actions"><a class="btn btn-terra" href="#oka">Conheça o OKA <span>↓</span></a><a class="btn btn-ghost" id="maps-link" href="#">Como chegar <span>↗</span></a></div>
+    <p>Um espaço para jogar, encontrar e curtir — com a energia da areia e o céu aberto.</p>
+    <div class="hero-actions"><a class="btn terra" href="#oka">Conheça o OKA ↓</a><a class="btn outline" data-maps href="#">Como chegar ↗</a></div>
   </div>
-  <div class="hero-meta"><span>01</span><span>EXPLORE ↓</span><span>OKA / 2026</span></div>
+  <div class="hero-foot"><span>01</span><span>EXPLORE ↓</span><span>OKA / 2026</span></div>
 </section>
 
-<div class="ticker" aria-hidden="true"><div>JOGO — AREIA — ENERGIA — MOVIMENTO — ENCONTROS — OKA — JOGO — AREIA — ENERGIA — MOVIMENTO — ENCONTROS — OKA —</div></div>
+<div class="ticker" aria-hidden="true"><div>JOGO · AREIA · ENERGIA · MOVIMENTO · ENCONTROS · OKA · JOGO · AREIA · ENERGIA · MOVIMENTO · ENCONTROS · OKA ·</div></div>
 
-<section class="section about" id="oka">
-  <div class="section-head reveal"><p class="eyebrow">01 / O OKA</p><h2>Mais que um lugar.<br><em>Uma experiência.</em></h2></div>
-  <div class="about-layout">
-    <div class="about-copy reveal"><p class="lead">O OKA reúne esporte, lazer, gastronomia e encontros em um ambiente pensado para aproveitar o melhor do dia.</p><p>Areia, natureza, arquitetura e convivência se encontram em uma experiência aberta, urbana e brasileira.</p><span class="coordinate">18°55' / 48°16'<br>UBERLÂNDIA · MG</span></div>
-    <div class="about-image large reveal"><img src="https://ygdoowbuasvysfducwys.supabase.co/storage/v1/object/public/padel/images/ff0d0a9d-7449-49be-9f85-e76053db3984/a2697450-0c35-4af8-8b8d-2168cf1d7f48.png?updated" alt="Espaço externo do OKA." loading="lazy"></div>
-    <div class="court-line" aria-hidden="true"></div>
+<section class="section" id="oka">
+  <div class="section-title reveal"><p class="kicker">01 / O OKA</p><h2>Mais que um lugar.<br><em>Uma experiência.</em></h2></div>
+  <div class="about">
+    <div class="about-text reveal"><p class="lead">O OKA reúne esporte, lazer, gastronomia e encontros em um ambiente pensado para aproveitar o melhor do dia.</p><p>Areia, natureza, arquitetura e convivência se encontram em uma experiência aberta, urbana e brasileira.</p><span class="coords">UBERLÂNDIA · MG<br>18°55' / 48°16'</span></div>
+    <div class="photo tall reveal"><img class="content-photo" alt="Espaço externo do OKA." loading="lazy"></div>
   </div>
 </section>
 
-<section class="section sports dark" id="esportes">
-  <div class="section-head split reveal"><div><p class="eyebrow light">02 / ESPORTES</p><h2>Entre em<br><em>quadra.</em></h2></div><p class="section-intro">Jogo de areia com clima leve. O esporte é o ponto de partida — a experiência vai além dele.</p></div>
-  <div class="sports-grid" id="sports-grid"></div>
+<section class="section dark" id="esportes">
+  <div class="section-title split reveal"><div><p class="kicker light">02 / ESPORTES</p><h2>Entre em<br><em>quadra.</em></h2></div><p>Jogo de areia com clima leve. O esporte é o ponto de partida — a experiência vai além dele.</p></div>
+  <div class="sports" id="sports"></div>
 </section>
 
 <section class="section experience">
-  <div class="experience-photo reveal"><img src="https://ygdoowbuasvysfducwys.supabase.co/storage/v1/object/public/padel/images/ff0d0a9d-7449-49be-9f85-e76053db3984/a2697450-0c35-4af8-8b8d-2168cf1d7f48.png?updated" alt="Área externa do OKA." loading="lazy"></div>
-  <div class="experience-copy reveal"><p class="eyebrow">03 / EXPERIÊNCIA</p><h2>Depois do jogo,<br><em>a experiência continua.</em></h2><p>Um lugar para estar junto, respirar o lado de fora e deixar o dia acontecer no seu ritmo.</p><div class="big-word">OKA<span>∞</span></div></div>
+  <div class="photo experience-photo reveal"><img class="content-photo" alt="Área externa do OKA." loading="lazy"></div>
+  <div class="experience-text reveal"><p class="kicker">03 / EXPERIÊNCIA</p><h2>Depois do jogo,<br><em>a experiência continua.</em></h2><p>Um lugar para estar junto, respirar o lado de fora e deixar o dia acontecer no seu ritmo.</p><strong>OKA<span>∞</span></strong></div>
 </section>
 
-<section class="section food" id="gastronomia">
-  <div class="section-head split reveal"><div><p class="eyebrow">04 / GASTRONOMIA</p><h2>Comida, bebida<br><em>e tempo para ficar.</em></h2></div><p class="section-intro">O conteúdo do cardápio fica preparado para ser atualizado pelo administrador, sem inventar pratos ou preços.</p></div>
-  <div class="food-editorial reveal">
-    <div class="food-image"><img src="https://ygdoowbuasvysfducwys.supabase.co/storage/v1/object/public/padel/images/ff0d0a9d-7449-49be-9f85-e76053db3984/a2697450-0c35-4af8-8b8d-2168cf1d7f48.png?updated" alt="Ambiente do OKA." loading="lazy"></div>
-    <div class="food-note"><span class="number">04</span><p id="menu-note"></p><a class="btn btn-dark" href="#contato">Conheça nosso cardápio <span>↗</span></a></div>
+<section class="section sand" id="gastronomia">
+  <div class="section-title split reveal"><div><p class="kicker">04 / GASTRONOMIA</p><h2>Comida, bebida<br><em>e tempo para ficar.</em></h2></div><p>O conteúdo do cardápio fica preparado para receber os dados oficiais do estabelecimento, sem inventar pratos ou preços.</p></div>
+  <div class="food">
+    <div class="photo food-photo reveal"><img class="content-photo" alt="Ambiente do OKA." loading="lazy"></div>
+    <div class="food-copy reveal"><span>04</span><p>Conheça o cardápio oficial do OKA e descubra o que está servido no momento da sua visita.</p><a class="btn darkbtn" href="#contato">Conheça nosso cardápio ↗</a></div>
   </div>
 </section>
 
-<section class="section events dark" id="eventos">
-  <div class="section-head reveal"><p class="eyebrow light">05 / EVENTOS</p><h2>Seu momento,<br><em>do seu jeito.</em></h2></div>
-  <div class="events-layout">
-    <div class="event-copy reveal"><p>Encontros, comemorações, experiências esportivas ou eventos privados podem começar por aqui. Conte o que você está planejando e o OKA confirma as possibilidades.</p><p class="muted" id="event-note"></p></div>
-    <form class="event-form reveal" id="event-form">
-      <div class="field-grid"><label>Nome<input name="nome" required autocomplete="name"></label><label>Telefone<input name="telefone" required inputmode="tel" autocomplete="tel"></label></div>
-      <div class="field-grid"><label>Data desejada<input name="data" type="date"></label><label>Nº de pessoas<input name="pessoas" type="number" min="1"></label></div>
-      <label>Tipo de evento<select name="tipo"><option>Encontro</option><option>Comemoração</option><option>Evento esportivo</option><option>Evento privado</option><option>Outro</option></select></label>
+<section class="section dark" id="eventos">
+  <div class="section-title reveal"><p class="kicker light">05 / EVENTOS</p><h2>Seu momento,<br><em>do seu jeito.</em></h2></div>
+  <div class="events">
+    <div class="event-copy reveal"><p>Conte o que você está planejando. A equipe do OKA confirma disponibilidade e possibilidades.</p><small>O formulário não confirma reserva automaticamente.</small></div>
+    <form class="form reveal" id="form">
+      <div class="two"><label>Nome<input name="nome" required autocomplete="name"></label><label>Telefone<input name="telefone" required autocomplete="tel"></label></div>
+      <div class="two"><label>Data<input type="date" name="data"></label><label>Pessoas<input type="number" name="pessoas" min="1" inputmode="numeric"></label></div>
+      <label>Tipo<select name="tipo"><option>Encontro</option><option>Comemoração</option><option>Evento esportivo</option><option>Evento privado</option><option>Outro</option></select></label>
       <label>Mensagem<textarea name="mensagem" rows="4"></textarea></label>
-      <button class="btn btn-terra" type="submit">Fale com o OKA <span>↗</span></button>
-      <p class="form-status" id="form-status" aria-live="polite"></p>
+      <button class="btn terra" type="submit">Fale com o OKA ↗</button>
+      <p id="status" class="status" aria-live="polite"></p>
     </form>
   </div>
 </section>
 
-<section class="section gallery-section" id="galeria">
-  <div class="section-head split reveal"><div><p class="eyebrow">06 / GALERIA</p><h2>Veja o<br><em>OKA.</em></h2></div><p class="section-intro">Uma galeria preparada para receber fotografias reais e atualizadas do espaço.</p></div>
-  <div class="gallery-grid" id="gallery-grid"></div>
+<section class="section" id="galeria">
+  <div class="section-title split reveal"><div><p class="kicker">06 / GALERIA</p><h2>Veja o<br><em>OKA.</em></h2></div><p>Fotografias reais do espaço entram aqui para construir uma presença visual viva e atual.</p></div>
+  <div class="gallery" id="gallery"></div>
 </section>
 
-<section class="section reviews dark">
-  <div class="reviews-top reveal"><div><p class="eyebrow light">07 / PROVA SOCIAL</p><div class="rating">4,5<span>★</span></div><p class="rating-note">304 avaliações públicas</p></div><a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=OKA+Bar+Uberl%C3%A2ndia" target="_blank" rel="noopener">Ver no Google <span>↗</span></a></div>
-  <div class="review-grid" id="review-grid"></div>
+<section class="section dark">
+  <div class="reviews-head reveal"><div><p class="kicker light">07 / AVALIAÇÕES</p><strong>4,5<span>★</span></strong><p>304 avaliações públicas</p></div><a class="btn outline" href="https://www.google.com/maps/search/?api=1&query=OKA+Bar+Uberl%C3%A2ndia" target="_blank" rel="noopener">Ver no Google ↗</a></div>
+  <div class="reviews" id="reviews"></div>
 </section>
 
-<section class="section location" id="contato">
-  <div class="section-head reveal"><p class="eyebrow">08 / LOCALIZAÇÃO</p><h2>Até breve,<br><em>Uberlândia.</em></h2></div>
-  <div class="location-grid">
-    <div class="contact-panel reveal">
-      <p class="eyebrow">OKA BAR</p>
-      <h3 id="address"></h3><p id="city"></p><p id="zip"></p>
-      <div class="contact-links"><a id="phone-link" href="#"></a><a id="instagram-link" href="#" target="_blank" rel="noopener"><span id="instagram-handle"></span> ↗</a><a id="maps-link-2" href="#" target="_blank" rel="noopener">Como chegar ↗</a></div>
-      <div class="hours"><p class="eyebrow">HORÁRIOS</p><div id="hours"></div><small>Horários sujeitos a alterações. Confirme antes da visita.</small></div>
+<section class="section" id="contato">
+  <div class="section-title reveal"><p class="kicker">08 / LOCALIZAÇÃO</p><h2>Até breve,<br><em>Uberlândia.</em></h2></div>
+  <div class="location">
+    <div class="contact reveal"><p class="kicker">OKA BAR</p><h3>Av. Ver. Carlito Cordeiro, 1321</h3><p>Uberlândia — MG · 38410-665</p>
+      <div class="links"><a data-phone></a><a data-instagram target="_blank" rel="noopener"></a><a data-maps target="_blank" rel="noopener">Como chegar ↗</a></div>
+      <div class="hours"><p class="kicker">HORÁRIOS</p><div id="hours"></div><small>Horários sujeitos a alterações. Confirme antes da visita.</small></div>
     </div>
-    <div class="map-wrap reveal"><iframe title="Mapa do OKA em Uberlândia" src="https://www.google.com/maps?q=Av.%20Ver.%20Carlito%20Cordeiro%201321%2C%20Uberl%C3%A2ndia%20MG&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    <div class="map reveal"><iframe title="Mapa do OKA" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Av.%20Ver.%20Carlito%20Cordeiro%201321%2C%20Uberl%C3%A2ndia%20MG&output=embed"></iframe></div>
   </div>
 </section>
 
-<section class="instagram-strip">
-  <div><p class="eyebrow">09 / INSTAGRAM</p><h2>@espacooka</h2></div>
-  <a class="btn btn-dark" href="https://www.instagram.com/espacooka/" target="_blank" rel="noopener">Ver no Instagram <span>↗</span></a>
-</section>
+<section class="insta"><div><p class="kicker light">09 / INSTAGRAM</p><h2>@espacooka</h2></div><a class="btn outline" data-instagram target="_blank" rel="noopener">Ver no Instagram ↗</a></section>
 </main>
 
-<footer class="footer">
-  <div class="footer-brand"><span>OKA</span><p>Esporte, encontros<br>e experiências.</p></div>
-  <div class="footer-links"><a href="#oka">O OKA</a><a href="#esportes">Esportes</a><a href="#gastronomia">Gastronomia</a><a href="#eventos">Eventos</a><a href="#galeria">Galeria</a><a href="#contato">Contato</a></div>
-  <div class="footer-contact"><p>Av. Ver. Carlito Cordeiro, 1321<br>Uberlândia — MG</p><a href="tel:+5534991887306">(34) 99188-7306</a><a href="https://www.instagram.com/espacooka/" target="_blank" rel="noopener">@espacooka ↗</a></div>
-  <div class="footer-bottom"><span>© 2026 OKA</span><span>Esporte / Areia / Encontros</span></div>
+<footer>
+  <div class="footer-logo">OKA</div><p>Esporte, encontros<br>e experiências.</p>
+  <div class="footer-nav"><a href="#oka">O OKA</a><a href="#esportes">Esportes</a><a href="#gastronomia">Gastronomia</a><a href="#eventos">Eventos</a><a href="#galeria">Galeria</a><a href="#contato">Contato</a></div>
+  <div class="footer-contact"><span>Av. Ver. Carlito Cordeiro, 1321<br>Uberlândia — MG</span><a data-phone></a><a data-instagram target="_blank" rel="noopener"></a></div>
+  <div class="copyright">© 2026 OKA <span>ESPORTE / AREIA / ENCONTROS</span></div>
 </footer>
 
-<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Galeria ampliada">
-  <button id="lightbox-close" aria-label="Fechar">×</button><button id="lightbox-prev" aria-label="Imagem anterior">←</button><img id="lightbox-img" alt=""><button id="lightbox-next" aria-label="Próxima imagem">→</button>
-</div>
+<div class="lightbox" id="lightbox" aria-hidden="true"><button id="close" aria-label="Fechar">×</button><button id="prev" aria-label="Imagem anterior">←</button><img id="lightbox-img" alt=""><button id="next" aria-label="Próxima imagem">→</button></div>
 <script type="module" src="./app.js"></script>
 </body>
 </html>

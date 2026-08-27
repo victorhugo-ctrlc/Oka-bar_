@@ -1,27 +1,25 @@
-# OKA — website institucional
+# OKA Website — v2 corrigida
 
-Entrega estática, responsiva e acessível do site institucional do OKA Quadra de Areia & Bar.
+Esta versão corrige os principais problemas da primeira entrega:
+- remove dependência de caminhos de arquivos locais;
+- garante que as imagens sejam atribuídas via JavaScript ao carregar;
+- usa layout responsivo real para Android, iPhone, tablet e desktop;
+- menu mobile funcional;
+- lightbox funcional;
+- links de telefone, Instagram e Google Maps funcionais;
+- conteúdo centralizado em `content.js`;
+- animações com fallback para `prefers-reduced-motion`;
+- iframe de mapa lazy;
+- formulário sem promessa falsa de reserva;
+- HTML semântico e labels;
+- SEO básico e schema LocalBusiness.
 
-## Estrutura
-- `index.html` — página e SEO/schema
-- `styles.css` — design system e responsividade
-- `content.js` — conteúdo centralizado/editável
-- `app.js` — interações, lightbox, animações e formulário
-- `robots.txt` / `sitemap.xml` — base de SEO técnico
+## Publicação
+1. Sirva a pasta como site estático.
+2. Troque as URLs das imagens em `content.js` por fotos oficiais/autorizadas do OKA.
+3. Troque o domínio do sitemap/canonical quando houver domínio oficial.
+4. Conecte o formulário a WhatsApp/e-mail/CRM.
+5. Teste em Safari iOS e Chrome Android antes de publicar.
 
-## Como publicar
-Pode ser servido como site estático em qualquer hospedagem/CDN. Para produção:
-1. Substitua `https://www.example.com/` pelo domínio real em `index.html` e `sitemap.xml`.
-2. Hospede as imagens oficiais do OKA em CDN própria e atualize apenas `content.js`/HTML.
-3. Conecte o formulário a um endpoint real (o protótipo atualmente valida e mostra confirmação local).
-4. Se houver CMS, faça o backend alimentar `content.js` ou migre os dados para sua camada de conteúdo.
-5. Ative compressão Brotli/Gzip, cache de assets e HTTPS na hospedagem.
-
-## Conteúdo verificado usado na base
-Endereço, telefone, Instagram, nota/quantidade de avaliações e horários foram conferidos em fontes públicas recentes. Há divergência entre diretórios sobre a segunda-feira; por isso o horário permanece centralizado e editável, com aviso para confirmação antes da visita.
-
-## Fotos
-A imagem inicial usa uma fotografia pública do espaço encontrada em uma página de reservas/quadras. Antes de uma publicação comercial definitiva, recomendo substituir por arquivos fornecidos/autorizados pelo estabelecimento, mantendo o mesmo `content.js`. A galeria está preparada para receber múltiplas fotos reais.
-
-## Formulário
-O formulário é propositalmente neutro quanto à disponibilidade de eventos. Ele não confirma reserva nem inventa serviços. Conecte-o a WhatsApp, e-mail ou CRM após definir o fluxo oficial do OKA.
+## Dados públicos usados
+Endereço, telefone, Instagram, horários e avaliação pública foram conferidos em fontes recentes. A fonte Restaurant Guru mostra 4,5/5 com 304 avaliações e os horários informados; a página SmashPro mostra o estabelecimento e galeria de imagens. Como horários podem mudar, o componente permanece editável.
